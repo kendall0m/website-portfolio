@@ -1,0 +1,370 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+    background-color: rgb(225, 227, 255);
+    font-family: "EB+Garamond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+a:link {
+    color: #6d4057;
+}
+a:visited {
+    color: rgb(73, 43, 97);
+}
+a:hover {
+    color: rgb(0, 0, 0);
+}
+a:focus {
+    color: rgb(0, 0, 0);
+}
+a:active {
+    color: rgb(189, 96, 108);
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(189, 96, 108);
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(90, 58, 62);
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2
+}
+
+
+
+span{
+    border: 2px solid rgb(194, 217, 224);
+    margin: 5px;
+    padding: 2px;
+    font-style: italic;
+}
+
+.profile-portrait{
+    border: 5px rgb(225, 192, 203);
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+}
+
+.page-header {
+    border: 5px rgb(225, 192, 203);
+    text-align: left;
+    margin: 10px auto 10px;
+    padding: 10px;
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+.page-footer {   
+    border: 5px rgb(225, 192, 203);
+    text-align: center;
+    margin: 10px auto 10px;
+    padding: 10px;
+    width: 500px;
+    clear:both;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+} 
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 5px rgb(225, 192, 203);
+    text-align: center;
+    margin: 10px auto 10px;
+    padding: 5px;
+    width: 500px;
+    
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.peachlogo {
+    height: 70px;
+    width: 70px;
+}
+
+.about-text{
+    border: 5px rgb(225, 192, 203);
+    text-align: left;
+    margin: 10px auto 10px;
+    padding: 10px;
+    width: 500px;
+}
+.contactme {
+    border: 5px rgb(225, 192, 203);
+    text-align: left;
+    margin: 10px auto 10px;
+    padding: 10px;
+    width: 500px;
+}
+
+.gridlayout {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 5px rgb(225, 192, 203);
+    text-align: center;
+    margin: 10px auto 10px;
+    padding: 5px;
+    width: 500px;
+}
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color:rgb(189, 96, 108);
+}
+.flex-item1 {
+    background-color: #6d4057;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+}
+.flex-item2 {
+    background-color: #6d4057;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+}
+.flex-item3 {
+    background-color: #6d4057;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+}
+.flex-item4 {
+    background-color: #6d4057;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+}
+
+.navigation-list {
+    list-style-type: none;
+    }
+    .navigation-list li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+    margin: 50px;
+}
+
+.grid__item {
+    background-color: rgb(225, 192, 203);
+
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+ 
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: rgb(225, 192, 203);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px rgb(189, 96, 108);
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+  }
+ 
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: rgb(225, 192, 203);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px rgb(189, 96, 108);
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+  @-webkit-keyframes color-change {
+    0% {
+      fill: #ec9164;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #fcffad;
+    }
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: #ec9164;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #fcffad;
+    }
+  }
+  .sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+  }
+
+  @-webkit-keyframes cloud-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+
+  @keyframes cloud-move {
+    from {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    to {
+      -webkit-transform: translate(200px, 50px);
+              transform: translate(200px, 50px);
+    }
+  }
+  .cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+  }
+  @-webkit-keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
+  @keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(446px, 48px);
+              transform: translate(446px, 48px);
+    }
+    to {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+  }
+  .cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+  }
