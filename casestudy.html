@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study</title>
+    <link rel="icon" href="img/totoro-01.webp">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="css/styles.production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto mt-2 ">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Fruit_Peach_NH_Icon.png" width="30" height="30" alt="">
+                </a>
+                <a class="nav-link" href="index.html" role="menuitem">Home </a>
+                <a class="nav-link" href="about.html" role="menuitem"> About Me </a> 
+                <a class="nav-link" href="contact.html" role="menuitem">Contact </a> 
+                <a class="nav-link" href="work.html" role="menuitem">My Work </a> 
+                <a class="nav-link" href="casestudy.html" role="menuitem">Case Study </a>  
+            </ul>
+        </nav>
+
+    <div class="container-lg my-5">
+        <div class="text1">PokeDex</div>
+        <div class="p1">
+            <br><br>
+            My favorite project to work on was a functioning PokeDex.<br><br>
+            This project used GitHub, PokeAPI, VSCode, and was coded with HTML, JavaScript, and CSS. 
+            This project returned a list of the first 151 Pokemon, as well as a card with information about each. This was the first project utilizing APIs, 
+            as I had to connect to an external database called PokeAPI to find and return information about each Pokemon. This project was challenging but a lot of fun,
+            and I enjoyed designing it.
+            <br><br>
+            To start with, I had to connect the app to an external API, the PokeAPI. I used the fetch function to accomplish this.
+            I created modals to overlay information about each Pokemon. I designed everything about the app, and chose a dreamlike pink and purple color scheme to reflect my own preference for psychic and fairy types.
+            I had several complications throughout the process which ranged in difficulty, from something missing capitalization to entire blocks of code needing to be rewritten. That said, the process of troubleshooting was both fun and rewarding.
+            <br><br>
+            In the end, I had created a website that:<br>
+            Fetched a list of the first 151 Pokemon from an external API<br>
+            Revealed a modal that contained and displayed information on each Pokemon<br>
+            <br>
+            This project was one of my favorites because of my love of Pokemon, and watching it all come together was very satisfying.
+            <br><br>
+    </div>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pokedex modal.png" class="d-block w-100"  alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img  src="img/pokedex code.png" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pokedex modal.png" class="d-block w-100" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div> -->
+
+
+      <style>
+
+        </style>
+
+        <body>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/pokedex modal.png" style="width:100%">
+          <div class="text">My Modal</div>
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/pokedex code.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/pokedex list.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+      
+    <!-- <div class="container-lg my-5">
+        <div class="row">
+            <div class="col">
+                <div class="p-5"><img src="img/pokedex code.png" width="300" height="200" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5"><img src="img/pokedex list.png" width="300" height="200" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5"><img src="img/pokedex logo.png" width="300" height="200" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5"><img src="img/pokedex modal.png" width="300" height="200" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+<footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social media">       
+        <a href="https://github.com/kendall0m" target="_blank"><img class="github" src="img/github.svg"  alt="Github"></a>
+        <a href="https://twitter.com/amethystaugur" target="_blank"><img class="twitter" src="img/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/kendall-saint-victor-129501247/" target="_blank"><img class="linkedin" src="img/linkedin.svg" alt="LinkedIn"></a><br>
+        <a href="#">Back to top</a>
+    </div> 
+</footer>
+
+    <script src="js/tota11y.min.js"></script>   
+</html>  
